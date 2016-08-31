@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem 'factory_girl_rails'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'simple_form'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
