@@ -20,4 +20,23 @@ RSpec.describe PostsController, type: :controller do
 			expect(response).to render_template :new
 		end
 	end
+	describe "POST #create" do
+  		it "creates a new post" do
+  			expect {
+    			post :create, post: FactoryGirl.attributes_for(:post)
+  			}.to change(Post, :count).by(1)
+  		end
+
+  		context "with valid attributes" do
+   			it "redirects to root_path" do
+
+    		end
+  		end
+
+  		context "with invalid attributes" do
+    		it "renders the new template" do
+
+    		end
+  		end
+	end	
 end
